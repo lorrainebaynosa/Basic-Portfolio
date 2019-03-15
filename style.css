@@ -1,71 +1,53 @@
 body {
     background: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    width: 1440px;
 }
 
-.grandparent {
-    background-color:#ffffff;
-    max-width: 960px;
-    margin: auto;
+.mainheader {
+    border-color: #cccccc;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.parent {
-    display: in-line block;
+    
+span {
+    display:in-line block;
+    vertical-align: top;
     background-color: #4aaaa5;
     color: #ffffff;
-    margin-left: 0px;
-    margin-right: 300px;
-    max-width: 480px;
+    padding: 20px;
+    font-size: 20 px;
+    margin-left: 200px;
 }
-
-.child {
-    display: in-line block;
-    float: right;
-    margin-left: 40px; 
-    margin-right: 0px;
-}
-.container h1 {
-    float: left;
-    background-color: teal;
-    color: #ffffff;
-    text-align: left;
-    border: gray;
-    padding: 0px;
-    width: 960px;
-    margin: 40px;
-}
-
-.Portfolio h2, .About-Me h2 {
-    float: left;
+    
+ul {
+    list-style-type: none;
     background-color: #ffffff;
-    color:#4aaaa5;
-    text-align: left;
-    border:#cccccc;
-    padding: 0px;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    width: 200px;
 }
 
-.pull-right a {
+nav li {
+    display: inline;
+    font-size: 10px;
+    text-align: center;
     float: right;
-    background-color: #ffffff;
-    color: #ffffff;
-    text-align: left;
-    border: gray;
-    padding: 0px;
-    width: 7%;
-    margin: 1%;
-    padding: 1%;
+    color: #777777;
+    margin: 5px;
+    padding: 0 5px 0 5px; 
 }
 
 .content {
     background-color: #ffffff;
-    color: #000000;
+    border-color: #dddddd;
+    color: #777777;
     text-align: left;
-    border: #dddddd; 
     padding: 10px;
     width: 960px;
-    margin: 40px; 
+    margin: auto; 
 }
 
 #footer {
@@ -78,26 +60,10 @@ body {
     width: 1000px
 }
 
-#Navigation a {
-    background-color: #ffffff;
-    color: gray;
-    float: right;
-    width: 10%;
-    height: 10 px;
-}
-
-.float-left {
-    float: left;
-    margin: 40px 40px 40px 10px;
-}
-
-.box {
-    vertical-align: top;
-    text-align: center;
-}
-
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
+
+
