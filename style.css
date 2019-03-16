@@ -110,6 +110,19 @@ html, body {
     min-height: 100%;
 }
 
+/* CSS for contact form */
+.form-row {
+    padding: 10 px 0;
+    display: flex;
+}
 
+.form-row label {
+    padding-right: 10 px;
 
+}
+
+.form-row input {
+    flex: 1;
+    
+}
 
