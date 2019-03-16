@@ -64,7 +64,12 @@ li {
     padding-bottom: 50px;
 }
 
-.aboutme, .contact {
+p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+}
+.aboutme, .contact, .portfolio {
     border-bottom-width: medium;
     border-bottom-width: length 920px;
     border-bottom-style: solid;
@@ -127,12 +132,21 @@ label, input {
     flex-basis: 100%;
 }
 
+#text_area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
 #btnSubmit {
     background:  #4aaaa5;
     color: #ffffff;
     font-size: 15px;
-    padding: 5px;
-    flex-basis: 120px;
-    height: 20px;
+    padding: 5px 20px 5px 20px;
+    flex-basis: 40px;
+    height: 250px;
     align-self: flex-start;
+    margin-top: 5px;
 }
