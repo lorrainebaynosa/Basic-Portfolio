@@ -64,7 +64,7 @@ li {
     padding-bottom: 50px;
 }
 
-.aboutme {
+.aboutme, .contact {
     border-bottom-width: medium;
     border-bottom-width: length 920px;
     border-bottom-style: solid;
@@ -97,7 +97,7 @@ section div div img {
     align-items: center;
 }
 
-.footercontents {
+.footer_contents {
     padding: 15px 45% 0px 45%;
 }
 
@@ -111,18 +111,28 @@ html, body {
 }
 
 /* CSS for contact form */
-.form-row {
-    padding: 10 px 0;
+
+label, input {
+    display: block;
+    padding: 5px 0px;
+}
+
+.form-box {
+    padding: 5px;
     display: flex;
+    flex-direction: column;
 }
 
-.form-row label {
-    padding-right: 10 px;
-
+.form-box input, .form-box text area {
+    flex-basis: 100%;
 }
 
-.form-row input {
-    flex: 1;
-    
+#btnSubmit {
+    background:  #4aaaa5;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px;
+    flex-basis: 120px;
+    height: 20px;
+    align-self: flex-start;
 }
-

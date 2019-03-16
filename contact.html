@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Form</title>
-    !-- Linking HTML files -->
     <link rel="stylesheet" href="contact.html">
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="portfolio.html">
-    <!-- Linking Assets Folder and Files-->
+
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/images">
-    <!-- Linking CSS -->
-    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+
 <body>
     <div id="container">
         <header>
@@ -23,35 +24,49 @@
                 <h1>Lorraine Baynosa</h1>
             </div>
             <nav>
-                 <ul>
+                <ul>
                     <li><a href="index.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    <div class="container">
-        <form action="contactform.php" method="post">
-            <div class="form-row">
-                <label for="name">Name</label>
-                <input type="text" id="name">
+
+        <section>
+            <div class="content">
+                <div class="contact">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact_form"></div>
+                <form method="post" id="contact" action="contactform.php">
+                    <div class="form-box">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message">
+                        <text area id="message"></text area> 
+                    <div class="form-box">
+                            <button id="btnSubmit">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
-            </div>
-            <div class="form-row">
-                    <label for="message">Message</label>
-                    <input type="text" id="message">
-            </div>
-        </form>
+    </div>
+    </div>
+    </section>
     </div>
     <footer>
-            <div class="footer">
-                <div class="footercontents">
-                    <p>Copyright ©</p>
-                </div>
+        <div class="footer">
+            <div class="footer_contents">
+                <p>Copyright ©</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+
 </html>
